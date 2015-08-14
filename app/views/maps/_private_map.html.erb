@@ -26,12 +26,9 @@
   </div>
 <% end %>
 
-
 <%= render partial: "map", locals: {url: map_geojson_path(@map), action: "map#show"} %>
 
 <%= render partial: "moment_cards", locals: {map: @map} %>
-
-
 
 <script>
   $("#submit").val("Automagical ...").prop('disabled', true);
